@@ -14,8 +14,8 @@ function Items(props) {
     const addlist=cartdata;
 
     addlist.push({
-      name:img,
-      img:name,
+      name:name,
+      img:img,
       offer:offer
     })
   

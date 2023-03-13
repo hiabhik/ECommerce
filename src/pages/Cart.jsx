@@ -4,6 +4,8 @@ import Header from '../components/Header'
 
 import { cartdata } from '../datas/cartData'
 
+import Card from "react-bootstrap/Card";
+
 function Cart() {
 
   return (
@@ -27,10 +29,10 @@ function Cart() {
               return(
                 <>
                   <div key={val._id} style={{width:"100%",backgroundColor:"rgb(246, 246, 246)",margin:"2px"}}>
-                    <div style={{width:"40%",display:"inline-block"}}>{val.img}</div>
+                    <div style={{width:"40%",display:"inline-block"}}><Card.Img style={{width:"10rem",height:"13rem",margin:"0 20%"}} variant="top" src={val.img} /></div>
                     <div style={{width:"20%",display:"inline-block"}}>{val.name}</div>
+                    <div style={{width:"20%",display:"inline-block"}}>1</div>
                     <div style={{width:"20%",display:"inline-block"}}>{val.offer}</div>
-                    <div style={{width:"20%",display:"inline-block"}}>UNIT PRICE</div>
                   </div>
                 </>
               )
